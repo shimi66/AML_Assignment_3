@@ -1,0 +1,26 @@
+# Answer the following questions for the Amazon assignment
+1. What data preparation steps did you apply? Did you experiment with 
+different preparation approaches when developing your topic model?
+	- 
+
+2. If you subdivided the data before topic modeling, describe the steps 
+you took and your findings.
+	- 
+
+3. Reflect on your discovered topics based on the most predictive words 
+for those topics: do you see the categories that certain topics 
+represent? Inspect a few reviews in those topics: do the reviews align 
+with your expectations about the meaning of the topic?
+	- 
+
+4. Explain how coherence (assessed manually and quantitatively) informed 
+both the revision to your approach (see deliverables 1.C) as well as 
+the comparison between the initial and resulting model(s). Which model 
+did you prefer and why?
+	- 
+
+If you used AI assistants such as Copilot & ChapGPT:
+- Which AI tools did you use and for what part of the solution?
+- Optional: share any reflection on using such tools. For instance, did 
+they contribute to your learning? Were they more helpful than harmful? 
+Did you notice any mistakes in their outputs?
