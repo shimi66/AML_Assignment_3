@@ -1,26 +1,56 @@
 # Answer the following questions for the Amazon assignment
 1. What data preparation steps did you apply? Did you experiment with 
 different preparation approaches when developing your topic model?
-	- 
+	- I tried random sampling the original data, taking only poor reviews,
+	training on tokenized and stemmed words only, training on tokenized words only,
+	and experimenting with adding other stopwords. I also removed any review that 
+	had under 5 characters as some were simply ":)". Looking back, I could have 
+	increased this number as I think it would have helped my model. I tried lots 
+	of different approaches after examining the outputs of my models after each trial. 
 
 2. If you subdivided the data before topic modeling, describe the steps 
 you took and your findings.
-	- 
+	- For the second half of my assignment, I used the first 2.5 million
+	negative reviews (0-2 stars) to see if I could detect types of negative
+	reviews. I think that my model able to loosely find different reasons for
+	negative reviews, but that it would have been easier if I had longer reviews
+	so that there was more likelihood that common words would appear in them. 
+	2.5 million reviews was about all I could fit in my ram before it started having
+	to swap pages out on my disk which took a lot longer to run so I stopped here
+	in terms of amount of reviews. 
 
 3. Reflect on your discovered topics based on the most predictive words 
 for those topics: do you see the categories that certain topics 
 represent? Inspect a few reviews in those topics: do the reviews align 
 with your expectations about the meaning of the topic?
-	- 
+	- I see that the words within the document show up mainly in one topic
+	but that the topics are still very vauge of what the problem with the product
+	was.  
 
 4. Explain how coherence (assessed manually and quantitatively) informed 
 both the revision to your approach (see deliverables 1.C) as well as 
 the comparison between the initial and resulting model(s). Which model 
 did you prefer and why?
-	- 
+	- I kept printing the top ten words within each topic found by the model to 
+	see if I could not only discern what the topic was, but evaluate if there 
+	were common words between topics that could be candidates as stopwords.
+	This gave me some insight as to what types of topics the model was learning 
+	and some intuitive sense as to how coherent they were. I also used the u_mass
+	and c_v quantitative metrics as they seemed to be pretty popular for evaluation.
+	I had to look up how they were calculated, since I didn't remember which helped
+	me understand what were "good" and "bad" values for each measure. While this 
+	was helpful to measure some improvement or decline that I could not recognize
+	just by viewing the words, I found that sometimes they didn't change much which
+	did not help me determine which areas I should try to improve.
+
+	Ultimately I chose my model that was predicting six topics from the negative reviews
+	as the topics seemed to make more sense to me when I examined them, and that the 
+	quantitative metrics were the highest I found in my many iterations. 
 
 If you used AI assistants such as Copilot & ChapGPT:
 - Which AI tools did you use and for what part of the solution?
 - Optional: share any reflection on using such tools. For instance, did 
 they contribute to your learning? Were they more helpful than harmful? 
 Did you notice any mistakes in their outputs?
+	- I did not use any AI tools in this assignment
+
